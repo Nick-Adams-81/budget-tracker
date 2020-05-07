@@ -1,6 +1,6 @@
 let db; 
 // new db request for "budget-tracker" database.
-const request = indexedDB.open("budget-tracker", 1);
+const request = indexedDB.open("budget-tracker", 3);
 //create object store called "pending" and set auto increment to true
 request.onupgradeneeded = function(event) {
     const db = event.target.result;
